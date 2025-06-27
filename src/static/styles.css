@@ -198,3 +198,34 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+#filters-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+#filters-toolbar input[type="text"],
+#filters-toolbar select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+#filters-toolbar input[type="text"] {
+  flex: 2 1 200px;
+}
+
+#filters-toolbar select {
+  flex: 1 1 120px;
+}
+
+@media (max-width: 600px) {
+  #filters-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
